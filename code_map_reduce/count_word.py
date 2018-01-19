@@ -1,5 +1,6 @@
 from mrjob.job import MRJob
 import time
+import re
 
 import operator
 
@@ -7,9 +8,11 @@ import operator
 # See https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
 
 
+WORD_RE = re.compile(r"[A-Za-z]+")
+
 class MRWordCounter(MRJob):
     def mapper(self, key, line):
-        for word in line.split():
+        for word in WORD_RE.findall(line):
             yield word, 1
 
     def reducer(self, word, counts):
