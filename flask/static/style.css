@@ -1,0 +1,577 @@
+@font-face {
+  font-family: DejaVuSerif;
+  src: url("../download/DejaVuSerif.eot");
+  src: local('☺'), local('Dejavu Serif'), url("../download/DejaVuSerif.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: DejaVuSerif;
+  font-style: italic;
+  src: url("../download/DejaVuSerif-Italic.eot");
+  src: local('☺'), local('Dejavu Serif Italic'), url("../download/DejaVuSerif-Italic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: DejaVuSerif;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../download/DejaVuSerif-Bold.eot");
+  src: local('☺'), local('Dejavu Serif Bold'), url("../download/DejaVuSerif-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: DejaVuSerif;
+  font-style: italic;
+  font-weight: bold;
+  src: url("../download/DejaVuSerif-BoldItalic.eot");
+  src: local('☺'), local('Dejavu Serif Bold Italic'), url("../download/DejaVuSerif-BoldItalic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: DejaVuSansCondensed;
+  src: url("../download/DejaVuSansCondensed.eot");
+  src: local('☺'), local('Dejavu Sans Condensed'), url("../download/DejaVuSansCondensed.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: DejaVuSansCondensed;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../download/DejaVuSansCondensed-Bold.eot");
+  src: local('☺'), local('Dejavu Sans Condensed Bold'), url("../download/DejaVuSansCondensed-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: DejaVuSansMono;
+  src: url("../download/DejaVuSansMono.eot");
+  src: local('☺'), local('Dejavu Sans Mono'), url("../download/DejaVuSansMono.ttf") format('truetype');
+}
+
+body {
+ font-family: serif;
+ font-size: 10pt;
+ background-image: url('/images/pinstripes4.png');
+ margin: 0;
+}
+
+#page {
+	width: 55em;
+	margin: 1em auto;
+	padding: 0 0 1em 0;
+	background-color: #fffffa;
+}
+
+/*
+ * --- Links ---
+ */
+
+a:link {
+ text-decoration: underline;
+ color: #3b7555;
+}
+
+a:visited {
+ text-decoration: underline;
+ color: #3b7555;
+}
+
+a:hover {
+ background-color: #7af0af;
+ color: #3b7555;
+}
+
+a.clear:link, a.clear:visited {
+ text-decoration: none;
+ margin: 0;
+ padding: 0;
+}
+
+a.clear:hover {
+ background-color: transparent;
+}
+
+a.clear>img {
+ background-color: transparent;
+ border: none;
+}
+
+/*
+ * --- Standard elements ---
+ */
+
+q { quotes: '"' '"' "'" "'" }
+
+b {
+ color: #0f0f0f;
+}
+
+hr {
+ padding: 0;
+ margin: 0.5em 5% 0.5em 5%;
+ border-style: dashed none none none;
+ border-width: 1px;
+ height: 1px;
+}
+
+h1 {
+ color: #0f0f0f;
+ font-size: large;
+ margin-left: -1.5em;
+ margin-right: -1.5em;
+}
+
+h2 {
+ color: #0f0f0f;
+ background: #e0e0e0 none no-repeat top left;
+ font-size: x-large;
+ font-weight: normal;
+ clear: both;
+ margin-left: -35px;
+ margin-right: -1.5em;
+ margin-right: -30px;
+ padding: 0.3em 0.3em 0.3em 40px;
+}
+
+h2.EN {
+ background-image: url('/images/header-flag_EN.png');
+}
+
+h2.DE {
+ background-image: url('/images/header-flag_DE.png');
+}
+
+img.inline {
+ border: 0px;
+ vertical-align: middle;
+}
+
+p.sig {
+ width: auto;
+ padding: 1em 2% 0 0;
+ text-align: right;
+}
+
+p.disclaimer {
+ font-size: x-small;
+ font-style: italic;
+ text-align: center;
+ margin: 2em 7em 0 2em;
+ padding-bottom: 1em;
+}
+
+blockquote {
+ border: 1px dotted #afafaf;
+ padding: 0 1em;
+}
+
+tt, pre {
+ font-family: DejaVuSansMono, monospace;
+}
+
+pre {
+ line-height: 120%;
+ font-size: 9pt;
+}
+
+pre.console {
+ background: black;
+ color: #bbb;
+ margin-left: 0.5em;
+ padding: 3px;
+ overflow: auto;
+}
+
+/*
+ * --- Building blocks ---
+ */
+
+#menu {
+ padding: 0;
+ margin: 0;
+ color: #EFEFEF;
+ background: #500000;
+}
+
+#menu a:link {
+ text-decoration: none;
+ color: #EFEFEF;
+ border: none; 
+}
+
+#menu a:visited {
+ text-decoration: none;
+ color: #EFEFEF;
+ border: none; 
+}
+
+#menu a:hover {
+ background-color: #3b7555;    
+ color: #7af0af;
+}
+
+.mblock {
+ text-align: center;
+}
+
+.mblock * {
+ color: white;
+ margin: 2px;
+}
+
+.mblock h1 {
+ border-bottom: 2px dotted white;
+ text-align: center;
+}
+
+/* Unordered lists default to menu entries */
+.mblock ul {
+ list-style: none;
+ padding: 0; 
+ margin: 0 2px 0 2px;
+}
+
+.mblock ul>li {
+ display: inline;
+ width: auto;
+}
+
+.mblock li>ul {
+ margin-right: 0;
+ margin-left: 4px; 
+}
+
+.desc {
+ padding: 4px;
+ background-color: #e0e0e0;
+ color: inherit;
+ display: block;
+ font-size: x-small;
+ font-style: italic;
+ font-weight: normal;
+ text-align: right;
+}
+
+.updated {
+  font-style: italic;
+  font-size: x-small;
+  color: #000070;
+  text-align: right;
+}
+
+.mblock li .desc {
+ display: none;
+}
+
+.mblock li>a {
+ text-decoration: none;
+ margin-right: 1em;
+}
+
+.mblock .active>a:link,
+.mblock .active>a:visited
+{
+ background-color: #e5f7ff;
+ color: black !important;
+}
+
+label {
+ display: block;
+}
+
+.bigbox {
+ width: 100%
+}
+
+input {
+ background-color: #f0f0f0;
+ border: 1px solid black;
+}
+
+textarea.bigbox {
+ height: 600px;
+ background-color: #f0f0f0;
+ border: 1px solid black;
+}
+
+.error {
+ background-color: #ef7f7f;
+}
+
+.mblock .active>a:hover
+{
+ color: #7af0af !important;
+}
+
+#content {
+ font-family: DejaVuSerif, serif;
+
+ margin: 0 auto;
+ width: 40em;
+ text-align: justify;
+}
+
+#content h1, #content h2, #content h3 {
+ font-family: DejaVuSansCondensed, sans-serif;
+}
+
+#content h1 {
+ text-align: center;
+ border-bottom: 2px solid #7f7f7f
+}
+
+#content h2 {
+}
+
+#content h3 {
+ font-size: 12pt;
+ font-variant: small-caps;
+ font-weight: bold;
+}
+
+#content p {
+ line-height: 140%;
+}
+
+#content i {
+  font-style: italic;
+}
+
+#content b {
+  font-weight: bold;
+}
+
+#footer {
+ margin: 0 5% 0 5%;
+ padding: 0.5em;
+ background: #7f7f7f;
+ color: #EFEFEF;
+ font-size: small
+}
+
+.comments {
+	font-size: small;
+}
+
+.comments .header {
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+.comments .body {
+	margin: 0 1.5em;
+}
+
+/*
+ * --- Special constructs ---
+ */
+
+/* Generic formatting elements */
+	/*
+.en:after {
+ margin-left: 3px;
+ content: url("../img/flag_en_10.png");
+}
+
+.de:after {
+ margin-left: 3px;
+ content: url("../img/flag_de_10.png");
+}
+	*/
+
+.new:before {
+ color: red;
+ font-weight: bold;
+ content: "New: ";
+}
+
+/* List of images (thumbs) with descriptions */ 
+ul.imgdsc {
+ list-style: none;
+ padding-left: 1em;
+}
+
+ul.imgdsc:after {
+ display: block;
+ height: 1px;
+ width: 1px;
+ content: ""; 
+ clear: both;
+}
+
+ul.imgdsc>li {
+ clear: both;
+ padding: 0.75em 0 0 0;
+ margin: 0; 
+}
+
+ul.imgdsc .galthumb {
+ float: left;
+ margin: 0 0.5em 2px -1em;
+ border: 2px solid  #7af0af;
+}
+
+/* List of links */
+ul.links {
+ list-style: none;
+ padding-left: 0;
+}
+
+ul.links>li>span {
+}
+
+ul.links a {
+ text-decoration: none;
+}
+
+/* --- File listing --- */
+
+.ftable {
+	font-family: sans-serif;
+	table-layout: auto;
+	border-spacing: 0;
+	border-collapse: collapse;
+	empty-cells: show;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.ftable .icon {
+	width: 16px;
+	overflow: hide;
+}
+
+.ftable th,
+.ftable td {
+	padding: 1px 0.3em;
+	margin: 0;
+}
+
+.ftable tr:hover {
+  background-color: #7af0af !important;
+}
+
+.ftable .ral {
+	text-align: right;
+	width: 1px;
+	overflow: visible;
+	white-space: nowrap;
+}
+
+.ftable th.ral {
+	text-align: center;
+}
+
+/*
+ * --- Gallery ---
+ *
+ * Until Firefox supports display: inline-block (see bug #9458), this will be
+ * a table. Perhaps it will even stay a table afterwards since there would
+ * be problems in aligning and sizing the boxes.
+ */
+table.gallery {
+ margin: 0;
+ width: 100%;
+}
+
+table.gallery tr {
+ width: 100%;
+}
+
+table.gallery td {
+ margin: 2%;
+ width: 29%;
+ padding: 1ex 5px 5px 1ex;
+ border: 1px dashed black;
+ background-color: #efefef;
+ text-align: center;
+ vertical-align: top;
+ font-style: italic;
+}
+
+/*
+ * --- merb stuff ---
+ */
+
+.debug {
+  border: 1px dotted #7f7f7f;
+  padding: 0.5em;
+  font-size: xx-small;
+}
+
+.debug p {
+  margin: 0;
+  padding: 0;
+}
+
+.debug .outp {
+  font-family: DejaVuSansMono, monospace;
+  font-weight: bold;
+  color: #a00000;
+}
+
+.warning {
+  border: 1px solid #f0f0a0;
+  background-color: #ffffe0;
+  color: #808000;
+  font-family: DejaVuSansMono, monospace;
+  font-weight: bold;
+  font-size: small;
+  text-align: center;
+}
+
+#container {
+  width: 80%;
+  text-align: left;
+  background-color: #fff;
+  margin-right: auto;
+  margin-left: auto;
+}
+#header-container {
+  width: 100%;
+  padding-top: 15px;
+}
+#header-container h1, #header-container h2 {
+  margin-left: 6px;
+  margin-bottom: 6px;
+}
+
+#left-container {
+  float: left;
+  width: 250px;
+  background-color: #FFFFFF;
+  color: black;
+}
+
+#left-container h3 {
+  color: #c55;
+}
+
+#main-container {
+  margin: 5px 5px 5px 260px;
+  padding: 15px;
+  border-left: 1px solid silver;
+  min-height: 400px;
+}
+#footer-container {
+  clear: both;
+  font-size: 12px;
+  font-family: Verdana, Arial, sans-serif;
+}
+.right {
+  float: right;
+  font-size: 100%;
+  margin-top: 5px;
+  color: #999;
+  background-color: #fff;
+}
+.left {
+  float: left;
+  font-size: 100%;
+  margin-top: 5px;
+  color: #999;
+  background-color: #fff;
+}
+#main-container ul {
+  margin-left: 3.0em;
+}
