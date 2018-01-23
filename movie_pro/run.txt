@@ -1,0 +1,5 @@
+/usr/local/bin/spark-submit --master local server.py
+In AWS:  --master spark://ip-172-31-30-53.us-west-1.compute.internal:7077
+http://www.novixys.com/blog/apache-spark-aws-cluster-setup/
+
+curl --data-binary @user_ratings.file http://127.0.0.1:5000/0/ratings
